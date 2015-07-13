@@ -54,7 +54,7 @@ __BEGIN_DECLS
 * these will be defined in FM Proxy in java layer for Fm app usage
 */
 typedef bool BOOLEAN;
-
+typedef uint16_t UINT16;
 
 //These structures are mapped to the corresponding BTA fm stack structures
 typedef struct
@@ -268,7 +268,7 @@ int (*read_audio_quality)(BOOLEAN turnOn);
 int (*config_signal_notification)(int time);
 
 /** Set fm volume. */
-int (*set_volume)(int volume);
+int (*set_volume)(UINT16 volume);
 
 /** Set SNR thresh for search. */
 int (*set_search_criteria)(int value);
